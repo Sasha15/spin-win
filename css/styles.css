@@ -174,6 +174,9 @@ a:hover, a:focus {
   border-radius: 3px;
   width: 100%;
   max-width: 240px;
+  background-image: url("../images/search-icon.png");
+  background-repeat: no-repeat;
+  background-position: 98% 50%;
 }
 
 .game-thumb, .promotion-slider .slick-slide {
@@ -709,8 +712,12 @@ a:hover, a:focus {
 ------------------------------------- */
 .games-section {
   background-image: url("../images/main-pattern.png");
+  padding-bottom: 15px;
 }
 
+.games-container {
+  padding-bottom: 40px;
+}
 .games-container h3 {
   color: #e8e9ea;
   text-transform: uppercase;
@@ -1029,6 +1036,57 @@ a:hover, a:focus {
   text-transform: uppercase;
   color: #fff;
   margin: 10px 0 20px;
+}
+
+.more-game {
+  padding: 12px 22px;
+  position: relative;
+  font-size: 13.6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #81fbff;
+  text-decoration: none;
+  display: inline-block;
+}
+.more-game span {
+  position: relative;
+  z-index: 1;
+}
+.more-game:before, .more-game:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-image: url("../images/blue-button-sprite.png");
+  background-repeat: no-repeat;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  z-index: 0;
+}
+.more-game:before {
+  opacity: 1;
+  background-position: -5px -5px;
+}
+.more-game:after {
+  opacity: 0;
+  background-position: -5px -53px;
+}
+.more-game:hover {
+  color: #81fbff;
+}
+.more-game:hover:before {
+  opacity: 0;
+}
+.more-game:hover:after {
+  opacity: 1;
 }
 
 /* ------------------------------------

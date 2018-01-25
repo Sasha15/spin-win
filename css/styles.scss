@@ -159,6 +159,9 @@ a {
 	@include border-radius(3px);
 	width: 100%;
 	max-width: 240px;
+	background-image: url('../images/search-icon.png');
+	background-repeat: no-repeat;
+	background-position: 98% 50%;
 }
 
 
@@ -646,8 +649,10 @@ a {
 ------------------------------------- */
 .games-section{
 	background-image: url('../images/main-pattern.png');
+	padding-bottom:  15px;
 }
 .games-container{
+	padding-bottom:  40px;
 	h3{
 		color: #e8e9ea;
 		text-transform: uppercase;
@@ -926,6 +931,50 @@ background-image: linear-gradient(to right, rgba(145,95,43,1) 0%,rgba(249,241,17
 		text-transform: uppercase;
 		color: $light_text_color;
 		margin: 10px 0 20px;
+	}
+}
+.more-game{
+	padding: 12px 22px;
+	position: relative;
+	font-size:  13.6px;
+	font-weight:  700;
+	text-transform: uppercase;
+	color: #81fbff;
+	text-decoration: none;
+	display: inline-block;
+	span{
+		position: relative;
+		z-index: 1;
+	}
+	&:before, &:after{
+		content: '';
+		position: absolute;
+		width:  100%;
+		height: 100%;
+		top:50%;
+		left: 50%;
+		@include transform(translate(-50%, -50%));
+		background-image: url('../images/blue-button-sprite.png');
+		background-repeat: no-repeat;
+		@include transition(opacity .4s ease-in-out);
+		z-index:  0;
+	}
+	&:before{
+		opacity: 1;
+		background-position: -5px -5px;
+	}
+	&:after{
+		opacity: 0;
+		background-position: -5px -53px;
+	}
+	&:hover{
+		color: #81fbff;
+		 &:before{
+		 	opacity: 0;
+		 }
+		 &:after{
+		 	opacity: 1;
+		 }
 	}
 }
 /* ------------------------------------
