@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<!-- Set up Meta -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+	<title>Spin & Win</title>
+
+	<!--Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+
+	<!--Include Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:700|Roboto+Condensed:300,300i,400,700&amp;subset=cyrillic" rel="stylesheet">
+
+	<!--Include Styles FIles -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/plugins/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/plugins/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/media-screen.css">
+
+	<!-- jQuery script -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<!-- Header Begin -->
+	<header class="header">
+		<div class="header__top">
+			<div class="row">
+				<div class="large-7 column">
+					<div class="menu-icon">
+						<a href="#">
+							<span class="sandwich-icon">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+							<span class="menu-title">Menu</span>
+						</a>
+					</div>
+					<div class="top-bar">
+						<ul class="header__menu-list">
+							<li><a href="#">Все игры</a></li>
+							<li><a href="#">Пополнение счета</a></li>
+							<li><a href="#">Получить выигрыш</a></li>
+							<li><a href="#">Бонусы</a></li>
+							<li><a href="#">Мобильная версия</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="large-5 column">
+					<div class="small-text-center large-text-left">
+						<a href="" class="fast-registration"><span class="fast-registration__icon"></span><span class="fast-registration__text">Быстрая регистарция</span></a>
+						<ul class="social-networks">
+							<li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="https://vk.com" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+						</ul>
+						<ul class="language-selector">
+							<li id="en" class="active"><img src="images/gb-flag.png"> <span>English</span></li>
+							<li id="ru"><img src="images/russian-flag.png"> <span>Русский</span></li>
+							<li class="language-dropdown">
+								<ul>
+									<li><a href="#" data-lang="en">English</a></li>
+									<li><a href="#" data-lang="ru">Русский</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="row">
+				<div class="large-5 column">
+					<div class="header__logo">
+						<a href="#"><img src="images/header-logo.png"></a>
+					</div>
+				</div>
+				<div class="large-7 column header-form-column large-text-right small-text-center">
+					<div class="registration-link"><a href="#"><span>Registration</span></a></div>
+					<form class="login-form">
+						<label>
+							<input type="text" placeholder="Username" name="user">
+						</label>
+						<label>
+							<input type="password" placeholder="Password" name="password">
+							<a href="#">Forgot your password ?</a>
+						</label>
+						<button type="submit"><span>Login</span></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header End -->
+	<!-- Banner Begin -->
+	<div class="banner-slider slick-slider">
+		<div class="slick-slide" style="background-image: url('images/slide.jpg')">
+			<div class="row">
+				<div class="column">
+					<img src="images/slide-img.png" alt="slide image">
+					<div class="banner-slider__logo">
+						<img src="images/slide-logo.png" alt="slide logo">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slick-slide" style="background-image: url('images/slide.jpg')">
+			<div class="row">
+				<div class="column">
+					<img src="images/slide-img.png" alt="slide image">
+					<div class="banner-slider__logo">
+						<img src="images/slide-logo.png" alt="slide logo">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Banner End -->
+
+	<!-- Last Winners and Jackpot section beginning -->
+	<div class="last-winners-jackpot">
+		<div class="row">
+			<div class="large-6 column">
+				<h2>Last winners</h2>
+				<div class="winners-slider slick-slider">
+					<div class="slick-slide">
+						<a href="#" class="winner-thumbnail">
+							<img src="images/ghotic-thumb.jpg" alt="Ghotic game">
+						</a>
+						<div class="winner-description">
+							<h3 class="winner-game-name">Ghotic</h3>
+							<p class="money-won">185.00$</p>
+							<p class="winner-name">PlayerName</p>
+						</div>
+					</div>
+					<div class="slick-slide">
+						<a href="#" class="winner-thumbnail">
+							<img src="images/game-of-throne-thumb.jpg" alt="Game of thrones game">
+						</a>
+						<div class="winner-description">
+							<h3 class="winner-game-name">Game of thrones</h3>
+							<p class="money-won">185.00$</p>
+							<p class="winner-name">PlayerName</p>
+						</div>
+					</div>
+					<div class="slick-slide">
+						<a href="#" class="winner-thumbnail">
+							<img src="images/robyn-thumb.jpg" alt="Robyn">
+						</a>
+						<div class="winner-description">
+							<h3 class="winner-game-name">Robyn</h3>
+							<p class="money-won">185.00$</p>
+							<p class="winner-name">PlayerName</p>
+						</div>
+					</div>
+					<div class="slick-slide">
+						<a href="#" class="winner-thumbnail">
+							<img src="images/game-of-throne-thumb.jpg" alt="Game of thrones game">
+						</a>
+						<div class="winner-description">
+							<h3 class="winner-game-name">Game of thrones</h3>
+							<p class="money-won">185.00$</p>
+							<p class="winner-name">PlayerName</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="large-6 column small-text-center large-text-left">
+				<h2>Jackpot</h2>
+				<ul class="place">
+					<li class="place__first"><img src="images/first-place.png"><span>7 859 352</span></li>
+					<li class="place__second"><img src="images/second-place.png"><span>2 148 759</span></li>
+					<li class="place__third"><img src="images/third-place.png"><span>1 589 654</span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Last Winners and Jackpot section End -->
+
+	<div class="games-section">
+		<div class="filter-container">
+			<div class="row">
+				<div class="large-one-fifth medium-6 column">
+					<a href="#" class="filter-button"><img src="images/popular-icon.png"><span>Popular</span></a>
+				</div>
+				<div class="large-one-fifth medium-6 column">
+					<a href="#" class="filter-button"><img src="images/new-icon.png"><span>New</span></a>
+				</div>
+				<div class="large-one-fifth medium-6 column">
+					<a href="#" class="filter-button"><img src="images/slot-game-icon.png"><span>Slot games</span></a>
+				</div>
+				<div class="large-one-fifth medium-6 column">
+					<a href="#" class="filter-button"><img src="images/cards-icon.png"><span>Card games</span></a>
+				</div>
+				<div class="large-one-fifth medium-6 column">
+					<a href="#" class="filter-button"><img src="images/roulette-icon.png"><span>Roulette</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="medium-6 column">
+				<div class="sort-by-title">
+					<p>Sort by: Popularity  |  A-Z</p>
+				</div>
+			</div>
+			<div class="medium-6 column">
+				<div class="search-container">
+					<p><input type="text" class="quicksearch" placeholder="Search" /></p>
+				</div>
+			</div>
+		</div>
+		<div class="games-container">
+			<div class="row">
+				<div class="large-one-fifth medium-6 column">
+					<div class="game-thumb" style="background-image: url('images/lucky-magic-thumb.jpg')">
+						<div class="game-button-container">
+							<a href="#" class="play-now-button"><span>Play Now</span></a>
+							<a href="#" class="demo-button"><span>Demo</span></a>
+						</div>
+					</div>
+					<h3>Lucky Magic</h3>
+				</div>
+				<div class="large-one-fifth medium-6 column">
+					<div class="game-thumb" style="background-image: url('images/anubis-secret-thumb.jpg')">
+						<div class="game-button-container">
+							<a href="#" class="play-now-button"><span>Play Now</span></a>
+							<a href="#" class="demo-button"><span>Demo</span></a>
+						</div>
+					</div>
+					<h3>Anubis’ secret</h3>
+				</div>
+				<div class="large-one-fifth medium-6 column">
+					<div class="game-thumb" style="background-image: url('images/dream-of-knight-thumb.jpg')">
+						<div class="game-button-container">
+							<a href="#" class="play-now-button"><span>Play Now</span></a>
+							<a href="#" class="demo-button"><span>Demo</span></a>
+						</div>
+					</div>
+					<h3>Dream of Knight</h3>
+				</div>
+
+				<div class="large-two-fifth medium-6 column float-right">
+					<h2 class="promotion-title">
+						Promotions
+					</h2>
+					<div class="promotion-slider slick-slider">
+						<div class="slick-slide" style="background-image: url('images/promotion-slide-img.jpg')">
+							<div class="promotion-slide-caption">
+								<h3>REACH FOR THE STARS <br>WITH UP TO 200 FREE SPINS</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt leo malesuada eros elementum eget eu ligula. </p>
+							</div>
+						</div>
+						<div class="slick-slide" style="background-image: url('images/promotion-slide-img.jpg')">
+							<div class="promotion-slide-caption">
+								<h3>REACH FOR THE STARS <br>WITH UP TO 200 FREE SPINS</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt leo malesuada eros elementum eget eu ligula. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="large-one-fifth medium-6 column">
+					<div class="game-thumb" style="background-image: url('images/lucky-magic-thumb.jpg')">
+						<div class="game-button-container">
+							<a href="#" class="play-now-button"><span>Play Now</span></a>
+							<a href="#" class="demo-button"><span>Demo</span></a>
+						</div>
+					</div>
+					<h3>Lucky Magic</h3>
+				</div>
+				<div class="large-one-fifth medium-6 column">
+					<div class="game-thumb" style="background-image: url('images/anubis-secret-thumb.jpg')">
+						<div class="game-button-container">
+							<a href="#" class="play-now-button"><span>Play Now</span></a>
+							<a href="#" class="demo-button"><span>Demo</span></a>
+						</div>
+					</div>
+					<h3>Anubis’ secret</h3>
+				</div>
+				<div class="large-one-fifth medium-6 column">
+					<div class="game-thumb" style="background-image: url('images/dream-of-knight-thumb.jpg')">
+						<div class="game-button-container">
+							<a href="#" class="play-now-button"><span>Play Now</span></a>
+							<a href="#" class="demo-button"><span>Demo</span></a>
+						</div>
+					</div>
+					<h3>Dream of Knight</h3>
+				</div>
+
+				<div class="large-one-fifth medium-6 column">
+					<div class="game-thumb" style="background-image: url('images/lucky-magic-thumb.jpg')">
+						<div class="game-button-container">
+							<a href="#" class="play-now-button"><span>Play Now</span></a>
+							<a href="#" class="demo-button"><span>Demo</span></a>
+						</div>
+					</div>
+					<h3>Lucky Magic</h3>
+				</div>
+				<div class="large-one-fifth medium-6 column">
+					<div class="game-thumb" style="background-image: url('images/anubis-secret-thumb.jpg')">
+						<div class="game-button-container">
+							<a href="#" class="play-now-button"><span>Play Now</span></a>
+							<a href="#" class="demo-button"><span>Demo</span></a>
+						</div>
+					</div>
+					<h3>Anubis’ secret</h3>
+				</div>
+				<div class="large-one-fifth medium-6 column">
+					<div class="game-thumb" style="background-image: url('images/dream-of-knight-thumb.jpg')">
+						<div class="game-button-container">
+							<a href="#" class="play-now-button"><span>Play Now</span></a>
+							<a href="#" class="demo-button"><span>Demo</span></a>
+						</div>
+					</div>
+					<h3>Dream of Knight</h3>
+				</div>
+				<div class="large-one-fifth medium-6 column">
+					<div class="game-thumb" style="background-image: url('images/submarine-adventure-thumb.jpg')">
+						<div class="game-button-container">
+							<a href="#" class="play-now-button"><span>Play Now</span></a>
+							<a href="#" class="demo-button"><span>Demo</span></a>
+						</div>
+					</div>
+					<h3>Submarine adventure</h3>
+				</div>
+				<div class="large-one-fifth medium-6 column">
+					<div class="game-thumb" style="background-image: url('images/big-money-scent-thumb.jpg')">
+						<div class="game-button-container">
+							<a href="#" class="play-now-button"><span>Play Now</span></a>
+							<a href="#" class="demo-button"><span>Demo</span></a>
+						</div>
+					</div>
+					<h3>The big money scent</h3>
+				</div>
+
+				<div class="large-one-fifth medium-6 column">
+					<div class="game-thumb" style="background-image: url('images/lucky-magic-thumb.jpg')">
+						<div class="game-button-container">
+							<a href="#" class="play-now-button"><span>Play Now</span></a>
+							<a href="#" class="demo-button"><span>Demo</span></a>
+						</div>
+					</div>
+					<h3>Lucky Magic</h3>
+				</div>
+				<div class="large-one-fifth medium-6 column">
+					<div class="game-thumb" style="background-image: url('images/anubis-secret-thumb.jpg')">
+						<div class="game-button-container">
+							<a href="#" class="play-now-button"><span>Play Now</span></a>
+							<a href="#" class="demo-button"><span>Demo</span></a>
+						</div>
+					</div>
+					<h3>Anubis’ secret</h3>
+				</div>
+				<div class="large-one-fifth medium-6 column">
+					<div class="game-thumb" style="background-image: url('images/dream-of-knight-thumb.jpg')">
+						<div class="game-button-container">
+							<a href="#" class="play-now-button"><span>Play Now</span></a>
+							<a href="#" class="demo-button"><span>Demo</span></a>
+						</div>
+					</div>
+					<h3>Dream of Knight</h3>
+				</div>
+				<div class="large-one-fifth medium-6 column">
+					<div class="game-thumb" style="background-image: url('images/submarine-adventure-thumb.jpg')">
+						<div class="game-button-container">
+							<a href="#" class="play-now-button"><span>Play Now</span></a>
+							<a href="#" class="demo-button"><span>Demo</span></a>
+						</div>
+					</div>
+					<h3>Submarine adventure</h3>
+				</div>
+				<div class="large-one-fifth medium-6 column">
+					<div class="game-thumb" style="background-image: url('images/big-money-scent-thumb.jpg')">
+						<div class="game-button-container">
+							<a href="#" class="play-now-button"><span>Play Now</span></a>
+							<a href="#" class="demo-button"><span>Demo</span></a>
+						</div>
+					</div>
+					<h3>The big money scent</h3>
+				</div>
+
+				<div class="large-one-fifth medium-6 column">
+					<div class="game-thumb" style="background-image: url('images/lucky-magic-thumb.jpg')">
+						<div class="game-button-container">
+							<a href="#" class="play-now-button"><span>Play Now</span></a>
+							<a href="#" class="demo-button"><span>Demo</span></a>
+						</div>
+					</div>
+					<h3>Lucky Magic</h3>
+				</div>
+				<div class="large-one-fifth medium-6 column">
+					<div class="game-thumb" style="background-image: url('images/anubis-secret-thumb.jpg')">
+						<div class="game-button-container">
+							<a href="#" class="play-now-button"><span>Play Now</span></a>
+							<a href="#" class="demo-button"><span>Demo</span></a>
+						</div>
+					</div>
+					<h3>Anubis’ secret</h3>
+				</div>
+				<div class="large-one-fifth medium-6 column">
+					<div class="game-thumb" style="background-image: url('images/dream-of-knight-thumb.jpg')">
+						<div class="game-button-container">
+							<a href="#" class="play-now-button"><span>Play Now</span></a>
+							<a href="#" class="demo-button"><span>Demo</span></a>
+						</div>
+					</div>
+					<h3>Dream of Knight</h3>
+				</div>
+				<div class="large-one-fifth medium-6 column">
+					<div class="game-thumb" style="background-image: url('images/submarine-adventure-thumb.jpg')">
+						<div class="game-button-container">
+							<a href="#" class="play-now-button"><span>Play Now</span></a>
+							<a href="#" class="demo-button"><span>Demo</span></a>
+						</div>
+					</div>
+					<h3>Submarine adventure</h3>
+				</div>
+				<div class="large-one-fifth medium-6 column">
+					<div class="game-thumb" style="background-image: url('images/big-money-scent-thumb.jpg')">
+						<div class="game-button-container">
+							<a href="#" class="play-now-button"><span>Play Now</span></a>
+							<a href="#" class="demo-button"><span>Demo</span></a>
+						</div>
+					</div>
+					<h3>The big money scent</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer Beginnig -->
+	<footer class="footer">
+		<div class="footer__menu">
+			<div class="row small-row">
+				<div class="column">
+					<ul>
+						<li><a href="#">About casino</a></li>
+						<li><a href="#">Terms and conditions</a></li>
+						<li><a href="#">Responsible gaming</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer__payment">
+			<div class="row small-row">
+				<div class="column">
+					<div class="footer__payment--slider">
+						<div class="footer__payment--logo matchHeight">
+							<img src="images/mastercard-logo.png" alt="mastercard">
+						</div>
+						<div class="footer__payment--logo matchHeight">
+							<img src="images/yandex-money.png" alt="yandex money">
+						</div>
+						<div class="footer__payment--logo matchHeight">
+							<img src="images/visa-logo.png" alt="visa">
+						</div>
+						<div class="footer__payment--logo matchHeight">
+							<img src="images/liqpay.png" alt="liqpay">
+						</div>
+						<div class="footer__payment--logo matchHeight">
+							<img src="images/qiwi.png" alt="qiwi wallet">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__copyright">
+			<div class="row small-row">
+				<div class="column">
+					<p class="small-text-center">© 2015 . All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer End -->
+
+	<!-- External js plugins  -->
+	<script type="text/javascript" src="js/jquery.matchHeight-min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+
+	<!-- Custom js script file -->
+	<script type="text/javascript" src="js/global.js"></script>
+</body>
+</html>
