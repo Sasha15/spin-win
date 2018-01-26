@@ -40,7 +40,7 @@ input::-webkit-input-placeholder {
   margin-bottom: 0;
 }
 
-button, .button, input[type='submit'], input[type='reset'] {
+button, input[type='submit'], input[type='reset'] {
   border: none;
   padding: 10px 20px;
   margin-bottom: 0;
@@ -51,7 +51,7 @@ button, .button, input[type='submit'], input[type='reset'] {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-button:hover, button:focus, .button:hover, .button:focus, input[type='submit']:hover, input[type='submit']:focus, input[type='reset']:hover, input[type='reset']:focus {
+button:hover, button:focus, input[type='submit']:hover, input[type='submit']:focus, input[type='reset']:hover, input[type='reset']:focus {
   background-color: #cc0202;
 }
 
@@ -177,6 +177,7 @@ a:hover, a:focus {
   background-image: url("../images/search-icon.png");
   background-repeat: no-repeat;
   background-position: 98% 50%;
+  color: #fff;
 }
 
 .game-thumb, .promotion-slider .slick-slide {
@@ -713,12 +714,14 @@ a:hover, a:focus {
 .games-section {
   background-image: url("../images/main-pattern.png");
   padding-bottom: 15px;
+  text-align: center;
 }
 
 .games-container {
   padding-bottom: 40px;
 }
 .games-container h3 {
+  text-align: left;
   color: #e8e9ea;
   text-transform: uppercase;
 }
@@ -950,6 +953,7 @@ a:hover, a:focus {
   padding: 0 15px;
 }
 .promotion-slider .promotion-slide-caption h3 {
+  text-align: right;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -965,7 +969,7 @@ a:hover, a:focus {
   font-size: 13.6px;
 }
 
-.filter-button {
+.filter-button, .sort-button {
   text-decoration: none;
   font-size: 14.4px;
   color: #fff;
@@ -977,15 +981,15 @@ a:hover, a:focus {
   text-align: center;
   padding: 10px 5px;
 }
-.filter-button span, .filter-button img {
+.filter-button span, .filter-button img, .sort-button span, .sort-button img {
   vertical-align: middle;
   position: relative;
   z-index: 1;
 }
-.filter-button img {
+.filter-button img, .sort-button img {
   max-width: 35px;
 }
-.filter-button span {
+.filter-button span, .sort-button span {
   margin-left: -5px;
   background-image: url("../images/text-hover-effect.png");
   background-position: 50% 50%;
@@ -993,7 +997,7 @@ a:hover, a:focus {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-.filter-button:before, .filter-button:after {
+.filter-button:before, .filter-button:after, .sort-button:before, .sort-button:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -1012,26 +1016,26 @@ a:hover, a:focus {
   transition: opacity 0.4s ease-in-out;
   z-index: 0;
 }
-.filter-button:before {
+.filter-button:before, .sort-button:before {
   opacity: 1;
   background-position: -13px -5px;
 }
-.filter-button:after {
+.filter-button:after, .sort-button:after {
   opacity: 0;
   background-position: -13px -65px;
 }
-.filter-button:hover {
-  color: #ffd3c4;
+.filter-button:hover, .filter-button:focus, .filter-button.is-checked, .sort-button:hover, .sort-button:focus, .sort-button.is-checked {
   color: #fff;
 }
-.filter-button:hover:before {
+.filter-button:hover:before, .filter-button:focus:before, .filter-button.is-checked:before, .sort-button:hover:before, .sort-button:focus:before, .sort-button.is-checked:before {
   opacity: 0;
 }
-.filter-button:hover:after {
+.filter-button:hover:after, .filter-button:focus:after, .filter-button.is-checked:after, .sort-button:hover:after, .sort-button:focus:after, .sort-button.is-checked:after {
   opacity: 1;
 }
 
 .sort-by-title p {
+  text-align: left;
   font-size: 12.8px;
   text-transform: uppercase;
   color: #fff;
@@ -1087,6 +1091,17 @@ a:hover, a:focus {
 }
 .more-game:hover:after {
   opacity: 1;
+}
+
+/* ------------------------------------
+	Isotope Styles
+------------------------------------- */
+.hidden {
+  visibility: hidden;
+  width: 0px !important;
+  height: 0px !important;
+  margin: 0px !important;
+  padding: 0px !important;
 }
 
 /* ------------------------------------
